@@ -28,7 +28,8 @@
             <div class="logo">
                 <img src="images/logo.png" alt="DavidAtWork" class="nav-brand-img">
             </div>
-            <ul class="nav-links">
+            <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Menu">☰</button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#over-mij">Over mij</a></li>
                 <li><a href="#diensten">Diensten</a></li>
                 <li><a href="#werkwijze">Werkwijze</a></li>
@@ -268,6 +269,18 @@
     </div>
 
     <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active-menu');
+        }
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(a => {
+            a.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active-menu');
+            });
+        });
+
         // Scroll Spy Logic
         window.addEventListener('scroll', function() {
             let current = '';
