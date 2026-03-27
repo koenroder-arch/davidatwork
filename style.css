@@ -1,4 +1,4 @@
-﻿/* Global Variables based on user image */
+/* Global Variables based on user image */
 :root {
     --bg-base: #f0f4f8;
     --text-main: #122132;
@@ -154,8 +154,6 @@ em {
     /* Remove fallback placeholder styles */
     background: transparent;
     object-fit: contain;
-    mix-blend-mode: multiply;
-    filter: brightness(1.15) contrast(1.1);
 }
 .mobile-menu-btn {
     display: none;
@@ -533,7 +531,7 @@ footer {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background: linear-gradient(135deg, #0e233d 0%, #1E4647 50%, #2e5b8c 100%);
+    background: linear-gradient(135deg, #0e233d 0%, #2a4984fc 50%, #2e5b8c 100%);
 }
 
 /* Animated teal grid lines on the dark bg */
