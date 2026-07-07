@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo-ds.png" type="image/icon type" />
     <title>David At Work - Videomaker</title>
     <!-- Google Fonts for elegant typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,18 +12,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
     <!-- Dynamic geometric/blurry teal background layer -->
-    <div class="background-backdrop">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-        <div class="checker-overlay"></div>
-    </div>
-
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">
@@ -63,8 +57,8 @@
                     <p class="lead">Videomaker met een passie voor beeld, sfeer en verhaal. Van bedrijfsvideo’s en
                         promotievideo’s tot evenementen, openingen en bruiloften: "Ik help om momenten, mensen en
                         bedrijven op een sterke en oprechte manier in beeld te brengen."</p>
-                    <div class="hero-actions-container" style="display: flex; flex-direction: column; gap: 1.5rem; width: fit-content;">
-                        <a href="#previews" class="play-indicator preview-link" style="text-decoration:none; justify-content:center; width:100%; box-sizing:border-box;">▶ Preview</a>
+                    <div class="hero-actions-container">
+                        <a href="#previews" class="play-indicator preview-link">▶ Preview</a>
                         <div class="hero-actions">
                             <a href="#contact" class="btn primary">Kom in contact</a>
                             <a href="#diensten" class="btn secondary">Bekijk diensten</a>
@@ -79,8 +73,8 @@
                 <div class="card full-card">
                     <span class="tag">OVER MIJ</span>
                     <h2>Creatief, betrokken en helder in communicatie.</h2>
-                    <div class="text-columns" style="text-align: justify;">
-                        <img src="images/david-bw.png" alt="David Benjamin Stam portret zwart wit" style="float: left; width: 160px; height: auto; border-radius: 6px; box-shadow: var(--shadow-sm); margin: 0.5rem 1.5rem 0.5rem 0; border: 1px solid var(--blue-verylight);">
+                    <div class="text-columns">
+                        <img src="images/david-bw.png" alt="David Benjamin Stam portret zwart wit" class="over-mij-img">
                         <p>Mijn liefde voor video en film begon al vroeg. Als kind wilde ik al regisseur worden, en die
                             passie is later de basis geworden van mijn werk. Daarom ben ik begonnen met een
                             mbo-opleiding in Media- en AV-technologie, waarna ik sinds 2023 ook Journalistiek aan de
@@ -90,7 +84,7 @@
                             tot één geheel dat klopt.</p>
                         <p>In de praktijk heb ik ervaring opgedaan bij verschillende bedrijven. Ik liep stage bij
                             Videonieuwsbericht in Hilversum en later bij Talpa Studios, waar ik nog steeds als
-                            freelancer actief ben. Ook heb ik gewerkt bij Spot Videoproducties in Haarlem. Met die
+                            freelancer actief ben. Daarnaast heb ik tijdens mijn opleiding journalistiek extra story-telling ervaring opgedaan. Met die
                             ervaring wil ik nu steeds meer mijn eigen weg volgen onder mijn eigen naam:
                             <strong>DavidAtWork</strong>.</p>
                         <p>Als persoon ben ik vriendelijk, creatief en sociaal. Ik houd van laagdrempelig contact, denk
@@ -107,9 +101,43 @@
                     <span class="tag">PORTFOLIO</span>
                     <h2>Bekijk mijn <em>Previews</em>.</h2>
                 </div>
-                <div style="display: flex; justify-content: center;">
-                    <!-- Embedded Preview Video -->
-                    <iframe src="https://www.instagram.com/reel/DWReSE1Enma/embed" width="100%" height="650" frameborder="0" scrolling="no" allowtransparency="true" style="max-width: 450px; border-radius: 16px; border: 4px solid var(--blue-mid); padding: 4px; box-shadow: var(--shadow-lg); background: var(--white);"></iframe>
+                <div class="instagram-grid">
+                    <a href="https://www.instagram.com/p/DWReSE1Enma/" target="_blank" rel="noopener noreferrer" class="instagram-card">
+                        <div class="instagram-thumb ig-thumb-1">
+                            <div class="ig-overlay">
+                                <div class="ig-play-btn">&#9654;</div>
+                            </div>
+                            <span class="ig-reel-badge">Reel</span>
+                        </div>
+                        <div class="instagram-card-footer">
+                            <span class="ig-platform">Instagram</span>
+                            <span class="ig-cta">Bekijk op Instagram &rarr;</span>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/p/DWy-F6EEq2W/" target="_blank" rel="noopener noreferrer" class="instagram-card">
+                        <div class="instagram-thumb ig-thumb-2">
+                            <div class="ig-overlay">
+                                <div class="ig-play-btn">&#9654;</div>
+                            </div>
+                            <span class="ig-reel-badge">Reel</span>
+                        </div>
+                        <div class="instagram-card-footer">
+                            <span class="ig-platform">Instagram</span>
+                            <span class="ig-cta">Bekijk op Instagram &rarr;</span>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/p/DadOl0yy0xO/" target="_blank" rel="noopener noreferrer" class="instagram-card">
+                        <div class="instagram-thumb ig-thumb-3">
+                            <div class="ig-overlay">
+                                <div class="ig-play-btn">&#9654;</div>
+                            </div>
+                            <span class="ig-reel-badge">Reel</span>
+                        </div>
+                        <div class="instagram-card-footer">
+                            <span class="ig-platform">Instagram</span>
+                            <span class="ig-cta">Bekijk op Instagram &rarr;</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -147,7 +175,7 @@
         <section id="werkwijze" class="section">
             <div class="container">
                 <div class="grid split-grid">
-                    <div class="card align-top">
+                    <div class="card">
                         <span class="tag">WERKWIJZE</span>
                         <h2>Mijn aanpak</h2>
                         <p>Ik werk het liefst met echte beelden en echte momenten. Mijn focus ligt op filmen, meedenken
@@ -178,33 +206,155 @@
             </div>
         </section>
 
-        <section id="apparatuur" class="section">
+        <section id="aanbevelingen" class="section">
             <div class="container">
-                <div class="section-header">
-                    <span class="tag">EXTRA MOGELIJKHEDEN</span>
-                    <h2>Geavanceerde <br><em>Apparatuur</em>.</h2>
-                    <p class="subtitle-text">Voor opdrachten beschik ik over aanvullende apparatuur om video’s nog
-                        sterker te maken.</p>
+                <div class="section-header center">
+                    <span class="tag">AANBEVELINGEN</span>
+                    <h2>Wat anderen over <em>mij</em> zeggen.</h2>
                 </div>
-                <div class="grid tools-grid">
-                    <div class="card tool-card interactive-card" onclick="openVideoModal('XI7nlAaf4iA')">
-                        <div class="play-indicator">▶ Bekijk video</div>
-                        <h4>DJI actioncam</h4>
-                        <p>Voor dynamische korte shots op plekken waar een grotere camera minder makkelijk kan komen.</p>
+                <div class="grid testimonials-grid">
+                    <div class="testimonial-card">
+                        <span class="testimonial-quote-mark">&ldquo;</span>
+                        <p class="testimonial-text">Door het goed vooruit denken van David, en doordat hij
+                            zelfstandig veel werkzaamheden oppakt, wordt het ons erg gemakkelijk gemaakt om dit
+                            project samen te doen. Tegelijkertijd staat David open voor nieuwe suggesties en
+                            ideeën, zonder zijn eigen plan uit het oog te verliezen.</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author">
+                                <strong>Hugo Kolff</strong>
+                                <span>Voorzitter, Roeivereniging Naarden</span>
+                            </div>
+                            <button type="button" class="testimonial-link"
+                                onclick="openImageModal('images/reverentie-hugo.jpeg')">Bekijk brief &rarr;</button>
+                        </div>
                     </div>
-                    <div class="card tool-card interactive-card" onclick="openVideoModal('jRzpagPx6uY')">
-                        <div class="play-indicator">▶ Bekijk video</div>
-                        <h4>Drone</h4>
-                        <p>Voor hoogtebeelden en extra overzicht van locaties, evenementen of buitenopnames.</p>
-                    </div>
-                    <div class="card tool-card interactive-card" onclick="openImageModal('images/zenderset.png')">
-                        <div class="play-indicator">Bekijk foto</div>
-                        <h4>Zenderset</h4>
-                        <p>Voor helder en professioneel geluid, bijvoorbeeld bij interviews of speeches.</p>
+                    <div class="testimonial-card">
+                        <span class="testimonial-quote-mark">&ldquo;</span>
+                        <p class="testimonial-text">David heeft een achttal dagen vol meegedraaid op de redactie.
+                            Je ziet meteen waar zijn passie en talent ligt: reportages filmen en monteren. Op de
+                            redactie was David zeer benaderbaar, prettig in de omgang en journalistiek
+                            professioneel aanwezig.</p>
+                        <div class="testimonial-footer">
+                            <div class="testimonial-author">
+                                <strong>Kolijn van Beurden</strong>
+                                <span>Hoofdredacteur, NH Gooi</span>
+                            </div>
+                            <button type="button" class="testimonial-link"
+                                onclick="openImageModal('images/reverentie-kolijn.jpeg')">Bekijk brief &rarr;</button>
+                        </div>
                     </div>
                 </div>
-                <p class="price-note text-center">Wanneer een opdracht extra apparatuur vraagt, kan dat invloed hebben
-                    op de prijs. Dit bespreek ik altijd vooraf.</p>
+            </div>
+        </section>
+
+        <section id="projecten" class="section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="tag">PROJECTEN</span>
+                    <h2>Een greep uit <em>mijn werk</em>.</h2>
+                </div>
+
+                <p class="projects-sub-label">Shorts</p>
+                <div class="grid shorts-grid">
+                    <div class="card short-card interactive-card" data-src="videos/SHORTS/LOETJE V1 kopie.MP4" onclick="openLocalVideoModal(this.dataset.src)">
+                        <div class="short-thumb">
+                            <div class="thumb-play-btn">&#9654;</div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Loetje</h4>
+                            <p>Promovideo restaurantopening</p>
+                        </div>
+                    </div>
+                    <div class="card short-card interactive-card" data-src="videos/SHORTS/OPEL V3 kopie.mp4" onclick="openLocalVideoModal(this.dataset.src)">
+                        <div class="short-thumb">
+                            <div class="thumb-play-btn">&#9654;</div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Opel</h4>
+                            <p>Promovideo automotive</p>
+                        </div>
+                    </div>
+                    <div class="card short-card interactive-card" data-src="videos/SHORTS/Obliq V1 kopie.mp4" onclick="openLocalVideoModal(this.dataset.src)">
+                        <div class="short-thumb">
+                            <div class="thumb-play-btn">&#9654;</div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Obliq</h4>
+                            <p>Bedrijfsvideo</p>
+                        </div>
+                    </div>
+                    <div class="card short-card interactive-card" data-src="videos/SHORTS/Drone website.mp4" onclick="openLocalVideoModal(this.dataset.src)">
+                        <div class="short-thumb">
+                            <div class="thumb-play-btn">&#9654;</div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Drone opname</h4>
+                            <p>Luchtopname locatie</p>
+                        </div>
+                    </div>
+                    <div class="card short-card interactive-card" data-src="videos/SHORTS/ONTWORTELD INSTA kopie.mp4" onclick="openLocalVideoModal(this.dataset.src)">
+                        <div class="short-thumb">
+                            <div class="thumb-play-btn">&#9654;</div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Ontworteld</h4>
+                            <p>Documentaire short</p>
+                        </div>
+                    </div>
+                    <div class="card short-card interactive-card" data-src="videos/SHORTS/Teaser summitV2 kopie.mp4" onclick="openLocalVideoModal(this.dataset.src)">
+                        <div class="short-thumb">
+                            <div class="thumb-play-btn">&#9654;</div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Summit Teaser</h4>
+                            <p>Teaser evenement</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="projects-sub-label">Journalistieke storytelling</p>
+                <div class="grid projects-grid">
+                    <div class="card photo-card interactive-card" data-videoid="fPoiutEBMig" onclick="openVideoModal(this.dataset.videoid)">
+                        <div class="photo-thumb-wrapper">
+                            <img src="videos/fotos/Asiel.png" alt="Hondenasiel" class="photo-thumb">
+                            <div class="photo-play-overlay"><span>&#9654;</span></div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Hondenasiel</h4>
+                            <p>Documentaire over dierenopvang</p>
+                        </div>
+                    </div>
+                    <div class="card photo-card interactive-card" data-videoid="BNNvwF3EknE" onclick="openVideoModal(this.dataset.videoid)">
+                        <div class="photo-thumb-wrapper">
+                            <img src="videos/fotos/Klokkenluider.png" alt="Klokkenluiders" class="photo-thumb">
+                            <div class="photo-play-overlay"><span>&#9654;</span></div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Klokkenluiders</h4>
+                            <p>Journalistiek portret van klokkenluiders</p>
+                        </div>
+                    </div>
+                    <div class="card photo-card interactive-card" data-videoid="5Js59JKI_Pk" onclick="openVideoModal(this.dataset.videoid)">
+                        <div class="photo-thumb-wrapper">
+                            <img src="videos/fotos/Struikelstenen.png" alt="Struikelstenen" class="photo-thumb">
+                            <div class="photo-play-overlay"><span>&#9654;</span></div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Struikelstenen</h4>
+                            <p>Documentaire over Stolpersteine in Utrecht</p>
+                        </div>
+                    </div>
+                    <div class="card photo-card interactive-card" data-videoid="ZoqjlUtKpOo" onclick="openVideoModal(this.dataset.videoid)">
+                        <div class="photo-thumb-wrapper">
+                            <img src="videos/fotos/hm.jpeg" alt="Röntgen" class="photo-thumb">
+                            <div class="photo-play-overlay"><span>&#9654;</span></div>
+                        </div>
+                        <div class="card-body">
+                            <h4>Röntgen</h4>
+                            <p>Bedrijfsvideo</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -226,9 +376,7 @@
             <div class="container">
                 <div class="card contact-card">
                     <h2 class="text-center">Klaar om jouw <em>verhaal</em> vast te leggen?</h2>
-                    <p class="text-center lead-text">Neem gerust contact op om de mogelijkheden voor een bedrijfsvideo,
-                        promotie, evenement of bruiloft te bespreken.</p>
-                    <p class="text-center" style="font-size: 0.85rem; opacity: 0.7; margin-bottom: 1.5rem;"><em>Klik op het adres of nummer om het direct te kopiëren.</em></p>
+                    <p class="text-center lead-text">Neem gerust contact op om de mogelijkheden te bespreken. Ik denk graag met u mee.</p>
 
                     <div class="contact-methods">
                         <a href="#" onclick="copyText('david@stamonline.net', this, event)" class="contact-btn">
@@ -278,132 +426,18 @@
     <!-- Image Modal -->
     <div id="imageModal" class="video-modal" onclick="closeImageModal()">
         <span class="close-modal">&times;</span>
-        <div class="modal-content" style="background:transparent; display:flex; align-items:center; justify-content:center; box-shadow:none; height:100%; aspect-ratio:auto;" onclick="event.stopPropagation()">
-            <img id="modalImage" src="" alt="Uitvergrote afbeelding" style="max-width:100%; max-height:85vh; border-radius:8px; box-shadow:0 30px 60px rgba(0,0,0,0.5); object-fit:contain;">
+        <div class="modal-content modal-image-content" onclick="event.stopPropagation()">
+            <img id="modalImage" src="" alt="Uitvergrote afbeelding">
         </div>
     </div>
-
-    <script>
-        // Mobile Menu Toggle
-        function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle('active-menu');
-        }
-
-        // Close menu when a link is clicked
-        document.querySelectorAll('.nav-links a').forEach(a => {
-            a.addEventListener('click', () => {
-                document.getElementById('navLinks').classList.remove('active-menu');
-            });
-        });
-
-        // Scroll Spy Logic
-        window.addEventListener('scroll', function() {
-            let current = '';
-            // Select all sections and the hero header
-            const sections = document.querySelectorAll('section, header.hero');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                // If the scroll position is passed the top of the section (with a 200px offset)
-                if (window.scrollY >= (sectionTop - 250)) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            // If we are at the very top, map the hero section 'home' (Videomaker) to 'over-mij'
-            if (window.scrollY < 200 || current === 'home') {
-                current = 'over-mij';
-            }
-            
-            // Map apparatuur to werkwijze since it's a sub-section
-            if (current === 'apparatuur') {
-                current = 'werkwijze';
-            }
-
-            document.querySelectorAll('.nav-links a').forEach(a => {
-                a.classList.remove('active');
-                if (a.getAttribute('href') === '#' + current) {
-                    a.classList.add('active');
-                }
-            });
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                let targetHref = this.getAttribute('href');
-                
-                // When clicking "Over mij", scroll to the top "VIDEOMAKER" home section instead
-                if (targetHref === '#over-mij') {
-                    targetHref = '#home';
-                }
-                
-                document.querySelector(targetHref).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Copy contact information to clipboard
-        function copyText(text, element, event) {
-            event.preventDefault(); // Prevent scrolling up due to href="#"
-            
-            navigator.clipboard.writeText(text).then(function() {
-                // Find the label span inside the button
-                var label = element.querySelector('.label');
-                var originalText = label.innerText;
-                
-                // Show copied feedback
-                label.innerText = '✔️ Gekopieerd!';
-                label.style.color = '#3B7E7A'; // Teal mid color
-                label.style.fontWeight = 'bold';
-                
-                // Revert back after 2 seconds
-                setTimeout(function() {
-                    label.innerText = originalText;
-                    label.style.color = '';
-                    label.style.fontWeight = '';
-                }, 2000);
-            }).catch(function(err) {
-                console.error('Kopiëren mislukt: ', err);
-            });
-        }
-
-        // Video Modal logic
-        function openVideoModal(videoId) {
-            var modal = document.getElementById('videoModal');
-            var iframe = document.getElementById('youtubeIframe');
-            // Add autoplay to URL
-            iframe.src = 'https://www.youtube.com/embed/' + videoId + '?autoplay=1';
-            modal.style.display = 'flex';
-            // Disable body scrolling
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeVideoModal() {
-            var modal = document.getElementById('videoModal');
-            var iframe = document.getElementById('youtubeIframe');
-            iframe.src = ''; // stop playing
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Re-enable scroll
-        }
-
-        // Image Modal logic
-        function openImageModal(imgSrc) {
-            var modal = document.getElementById('imageModal');
-            document.getElementById('modalImage').src = imgSrc;
-            modal.style.display = 'flex';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeImageModal() {
-            var modal = document.getElementById('imageModal');
-            document.getElementById('modalImage').src = '';
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-    </script>
+    <!-- Local Video Modal (shorts) -->
+    <div id="localVideoModal" class="video-modal" onclick="closeLocalVideoModal()">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content modal-portrait" onclick="event.stopPropagation()">
+            <video id="localVideo" width="100%" height="100%" controls></video>
+        </div>
+    </div>
+<script src="javascript/index.js"></script>
 </body>
 
 </html>
